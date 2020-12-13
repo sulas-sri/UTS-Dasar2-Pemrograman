@@ -1,0 +1,125 @@
+#Program pemesanan menu soto kudus Mas Jito
+#Program ini dibuat oleh Sulas Sri
+bayar1=0
+bayar2=0
+bayar3=0
+totalsemua=0
+jenis1=""
+jenis2=""
+jenis3=""
+
+print("='Warung Soto Kudus Mas jito'=")
+nama = input("Masukkan nama anda: ")
+print ("Nama Konsumen", nama)
+print(" ")
+print ("Menu Soto: ")
+
+def pilihan (i):
+    switcher={
+        1: 'Soto Kudus Paket Komplit: 30000',
+        2: 'Soto Kudus Paket Biasa: 20000',
+        3: 'Soto Kudus Tanpa Nasi: 15000',
+    }
+    return switcher.get(i, "Mohon maaf nomor pilihan anda, tidak ada didaftar menu")
+
+print ("1. Soto Kudus Paket Komplit")
+print ("2. Soto Kudus Paket Biasa")
+print ("3. Soto Kudus Tanpa Nasi")
+print(" ")
+nomor=int(input("Masukkan Pilihan: "))
+menu=pilihan(nomor)
+print(menu)
+porsi=int(input("Mau berapa porsi: "))
+if nomor == 1:
+    bayar1=bayar1+porsi*30000
+    print("Total Harga: ", bayar1)
+    jenis1=("Soto Kudus Paket Komplit")
+if nomor == 2:
+    bayar1=bayar1+porsi*20000
+    print("Total Harga: ", bayar1)
+    jenis1=("Soto Kudus Paket Biasa")
+if nomor == 3:
+    bayar1=bayar1+porsi*15000
+    print("Total Harga: ", bayar1)
+    jenis1=("Soto Kudus Tanpa Nasi")
+
+print ("\nMenu Sate: ")
+def pilihan (i):
+    switcher={
+        1: 'Sate Ampela Ati: 3500',
+        2: 'Sate Paru: 3500',
+        3: 'Sate Telor Puyuh: 3000',
+        4: 'Sate Kerang: 3000',
+        5: 'Sate Usus: 2000',
+    }
+    return switcher.get(i, "Mohon maaf nomor pilihan anda, tidak ada didaftar menu")
+
+print ("1. Sate Ampela Ati")
+print ("2. Sate Paru")
+print ("3. Sate Telor Puyuh")
+print ("4. Sate Kerang")
+print ("5. Sate Usus")
+print(" ")
+nomor=int(input("Masukkan Pilihan: "))
+menu=pilihan(nomor)
+print(menu)
+tusuk=int(input("Mau berapa tusuk sate: "))
+if nomor == 1:
+    bayar2=bayar2+tusuk*3500
+    print("Total Harga: ", bayar2)
+    jenis2=("Sate Ati Ampela")
+if nomor == 2:
+    bayar2=bayar2+tusuk*3500
+    print("Total Harga: ", bayar2)
+    jenis2=("Sate Paru")
+if nomor == 3:
+    bayar2=bayar2+tusuk*3000
+    print("Total Harga: ", bayar2)
+    jenis2=("Sate Telor Puyuh")
+if nomor == 4:
+    bayar2=bayar2+tusuk*3000
+    print("Total Harga: ", bayar2)
+    jenis2=("Sate Kerang")
+if nomor == 5:
+    bayar2=bayar2+tusuk*2000
+    print("Total Harga: ", bayar2)
+    jenis2=("Sate Usus")
+
+print ("\nMenu Minuman: ")
+def pilihan (i):
+    switcher={
+        1: 'Es Jeruk: 5000',
+        2: 'Es Teh Manis: 3500',
+        3: 'Es Kopi: 2000',
+    }
+    return switcher.get(i, "Mohon maaf nomor pilihan anda, tidak ada didaftar menu")
+    
+print ("1. Es Jeruk")
+print ("2. Es Teh Manis")
+print ("3. Es Kopi")
+print(" ")
+nomor=int(input("Masukkan Pilihan: "))
+menu=pilihan(nomor)
+print(menu)
+gelas=int(input("Mau berapa gelas: "))
+if nomor == 1:
+    bayar3=bayar3+gelas*3500
+    print("Total Harga: ", bayar3)
+    jenis3=("Es Jeruk")
+if nomor == 2:
+    bayar3=bayar3+gelas*3500
+    print("Total Harga: ", bayar3)
+    jenis3=("Es Teh Manis")
+if nomor == 3:
+    bayar3=bayar3+gelas*3000
+    print("Total Harga: ", bayar3)
+    jenis3=("Es Kopi")
+
+totalsemua=bayar1+bayar2+bayar3
+print("\nSemua total yang harus anda bayarkan: ", totalsemua)
+print("\n->>Terima kasih atas pesanannya, pesanan anda akan segera diproses<--") 
+TEAM
+class Question:
+    def __init__(self, prompt, jawab):
+        self.prompt = prompt
+        self.jawab = jawab
