@@ -118,8 +118,3 @@ if nomor == 3:
 totalsemua=bayar1+bayar2+bayar3
 print("\nSemua total yang harus anda bayarkan: ", totalsemua)
 print("\n->>Terima kasih atas pesanannya, pesanan anda akan segera diproses<--") 
-TEAM
-class Question:
-    def __init__(self, prompt, jawab):
-        self.prompt = prompt
-        self.jawab = jawab
